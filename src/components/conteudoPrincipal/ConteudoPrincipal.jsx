@@ -9,8 +9,12 @@ const ConteudoPrincipal = () => {
           </p>
           <p className="animate-fadeIn text-font-gray indent-2.5 text-center lg:text-xl">Meus conhecimentos abrangem tecnologias front e backend , como JavaScript, React , Node, Mysql, permitindo-me criar interfaces robustas, atraentes e interativas.</p>
           <div className="flex gap-[20px] items-center w-[100%]  items-center justify-center">
-            <button className="animate-slideInLeft bg-white h-14 p-[10px] w-[180px] rounded-3xl font-bold">Entrar em contato</button>
-            <button className="animate-slideInRight bg-bg-header h-14 p-[10px] w-[180px] rounded-3xl text-white border-white border-solid	border-2 font-bold">Download CV</button>
+            <button className="animate-slideInLeft bg-white h-14 p-[10px] w-[180px] rounded-3xl font-bold hover:border-2 hover:border-bg-header">
+            <a href="mailto:victorolvdev@gmail.com" target="_blank">Entrar em Contato</a>
+            </button>
+            <button className="animate-slideInRight bg-bg-header h-14 p-[10px] w-[180px] rounded-3xl text-white border-white border-solid	border-2 font-bold">
+              <a href="https://drive.google.com/drive/folders/1g_Q4ExjuA4qy0MBYMqlmzJeXkJb94bdf" target="_blank">Download CV</a>
+            </button>
           </div>
     </div>
   )

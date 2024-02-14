@@ -12,7 +12,7 @@ const TimeLine = () => {
 
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className='h-[auto]'>
       {inView && <div className='animate-fadeIn flex flex-col items-center relative'>
       <div className="absolute top-[160px] left-0 w-full h-[1px] bg-bg-header z-10"></div>
 
@@ -49,62 +49,6 @@ const TimeLine = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           dateClassName="text-white"
-          date="Junho de 2022"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">JavaScript: programando na linguagem da web</h3>
-          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
-          <p>
-            Tag: Javascript
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          dateClassName="text-white"
-          date="Junho de 2022"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">JavaScript: programando a Orientação a Objetos</h3>
-          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
-          <p>
-            Tag: Javascript
-          </p>
-        </VerticalTimelineElement>
-
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          dateClassName="text-white"
-          date="Setembro de 2022"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">React: desenvolvendo com JavaScript</h3>
-          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
-          <p>
-            Tag: Javascript, React
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          dateClassName="text-white"
-          date="Setembro de 2022"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">JavaScript: consumindo e tratando dados de uma API</h3>
-          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
-          <p>
-            Tag: Javascript
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          dateClassName="text-white"
           date="Outubro de 2022"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<IoSchoolOutline />}
@@ -125,22 +69,10 @@ const TimeLine = () => {
           <h3 className="vertical-timeline-element-title">React: escrevendo com Typescript</h3>
           <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
           <p>
-          Tag: Javascript, React
+          Tag: TypeScript, React
           </p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          dateClassName="text-white"
-          date="Novembro de 2022"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          icon={<IoSchoolOutline />}
-        >
-          <h3 className="vertical-timeline-element-title">React: como os componentes funcionam</h3>
-          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Alura</a>  </h4>
-          <p>
-          Tag: Javascript, React
-          </p>
-        </VerticalTimelineElement>
+       
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           dateClassName="text-white"
@@ -157,7 +89,7 @@ const TimeLine = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           dateClassName="text-white"
-          date="Juelho de 2023 - Nov de 2023"
+          date="Julho de 2023 - Nov de 2023"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<IoSchoolOutline />}
         >

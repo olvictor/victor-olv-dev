@@ -30,7 +30,7 @@ const Header = () => {
       <div className="hidden md:flex">
         <ul className={`animate-fadeIn gap-[10px] flex bg-bg-header uppercase w-[auto] items-center rounded-b-md text-white`}>
                {itemsMenu.map((item,index)=>{
-                return  <li className="cursor-pointer" key={index}><Link to={item} smooth={true} duration={500}>{item}</Link></li>
+                return  <li className="cursor-pointer hover:underline" key={index}><Link to={item} smooth={true} duration={500}>{item}</Link></li>
                 })}
         </ul>
       </div>
