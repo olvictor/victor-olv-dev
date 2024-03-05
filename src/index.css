@@ -15,7 +15,11 @@ body{
   background-color: #191919;
   height: auto;
 }
-
+.container-experiencia{
+  background-image: url('./assets/wave.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
 
 @keyframes fadeIn {
   from {

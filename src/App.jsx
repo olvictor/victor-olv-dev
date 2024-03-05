@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="flex flex-col w-fit">
     <Header />
-    <div className="flex flex-col px-[20px]">
+    <div className="flex flex-col">
       <main className="mt-[50px] h-screen  flex items-center justify-center font-poppins ">
         <ConteudoPrincipal />
       </main>

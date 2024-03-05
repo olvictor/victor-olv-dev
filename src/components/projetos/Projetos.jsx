@@ -14,13 +14,11 @@ import { useInView } from 'react-intersection-observer'
 
 const Projetos = () => {
     
-    const { ref, inView, entry } = useInView({
-        threshold: 0,
-      });
+  
 
   return (
-    <div ref={ref} id='Projetos' className='h-[1400px] md:h-[600px]'>
-    {inView &&     <div className='animate-fadeIn flex flex-col gap-[40px] h-[auto] text-center relative mt-[50px] '>
+    <div id='Projetos' className='h-[1400px] md:h-[600px]'>
+     <div className='animate-fadeIn flex flex-col gap-[40px] h-[auto] text-center relative mt-[50px] '>
         <div className="absolute top-[70px] left-0 w-full h-[1px] bg-bg-header z-10"></div>
 
             <h2 className='text-5xl font-bold text-white '>Projetos</h2>
@@ -83,7 +81,7 @@ const Projetos = () => {
                     </div>
                 </div>
             </div>
-        </div>}
+        </div>
     </div>
 
    

@@ -3,21 +3,19 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { IoSchoolOutline } from "react-icons/io5";
 import { useInView } from 'react-intersection-observer';
-
+import wave from '../../assets/wave-white.svg'
 
 const TimeLine = () => {
-  const { ref, inView, entry } = useInView({
-    threshold: 0,
-  });
+ 
 
 
   return (
-    <div ref={ref} className='h-[auto]'>
-      {inView && <div className='animate-fadeIn flex flex-col items-center relative'>
-      <div className="absolute top-[160px] left-0 w-full h-[1px] bg-bg-header z-10"></div>
-
-      <h2 className='text-5xl font-bold text-white mt-[90px] mb-[50px]'>Cursos</h2>
-
+      <div className='animate-fadeIn flex flex-col items-center relative h-[auto]'>
+      {/* <div className="absolute top-[160px] left-0 w-full h-[1px] bg-bg-header z-10"></div> */}
+      <div className='w-[100%]  absolute top-[0px]'>
+        <img src={wave} alt="" />
+      </div>
+      <h2 className='text-5xl font-bold text-white mt-[250px] mb-[200px] z-20'>Cursos</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -101,8 +99,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
         
       </VerticalTimeline>
-      </div>}
-    </div>
+      </div>
   )
 }
 

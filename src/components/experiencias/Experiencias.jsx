@@ -6,15 +6,12 @@ import { useInView } from 'react-intersection-observer';
 
 const Experiencias = () => {
     const [itemView,setItemView] = useState(null)
-    const { ref, inView, entry } = useInView({
-      threshold: 0,
-    });
+
 
   return ( 
-    <div ref={ref} id='Experiência'>
-      {inView && 
-      <div className='animate-fadeIn flex flex-col items-center gap-[40px] h-72  relative'>
-              <div className="absolute top-[110px] left-0 w-full h-[1px] bg-bg-header z-10"></div>
+    <div  id='Experiência'>
+      <div className='container-experiencia animate-fadeIn bg-bg-header flex flex-col items-center gap-[40px] h-screen relative items-center justify-center'>
+              {/* <div className="absolute top-[110px] left-0 w-full h-[1px] bg-bg-header z-10"></div> */}
               <div className='flex flex-col items-center '>
                   <h2 className='text-5xl font-bold text-white'>Experiencias</h2>
                   <h2 className='text-5xl font-bold text-white'> com :</h2>
@@ -57,7 +54,7 @@ const Experiencias = () => {
                     
                   </div>
         </div>
-     }
+
   </div> 
    
   )
