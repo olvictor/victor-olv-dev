@@ -3,7 +3,7 @@ import React from 'react'
 const ConteudoPrincipal = () => {
   return (
     <div className="flex flex-col gap-[30px] lg:w-[70%]" id='Início'>
-          <h1 className="animate-textShadow text-white text-5xl font-bold text-center lg:text-8xl">Desenvolvedor de Software<strong className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-transparent bg-clip-text"> Full Stack </strong></h1>
+          <h1 className="animate-textShadow text-white text-5xl font-bold text-center lg:text-8xl ">Desenvolvedor de Software<strong className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-transparent bg-clip-text"> Full Stack </strong></h1>
           <p className="animate-fadeIn text-font-gray indent-2.5 text-center lg:text-xl">
             Desenvolvedor de Software em busca de crescimento profissional e aprimoramento contínuo. Iniciei minha jornada na programação em 2022 e desde então tenho mergulhado no mundo tecnológico com uma curiosidade insaciável, sempre buscando aprender e evoluir.
           </p>

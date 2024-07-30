@@ -5,6 +5,8 @@ export { default as Node} from '../../assets/node.svg'
 export { default as Postgree} from '../../assets/postgree.svg'
 export { default as NextJs} from '../../assets/nextJS.svg'
 export { default as TailwindCSS} from '../../assets/tailwindcss.svg'
+export { default as java} from '../../assets/java.svg'
+export { default as close} from '../../assets/close.svg'
 
 
 

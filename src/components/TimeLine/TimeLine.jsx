@@ -98,6 +98,18 @@ const TimeLine = () => {
           </p>
         </VerticalTimelineElement>
         
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          dateClassName="text-white"
+          date="Janeiro de 2024 - Jul de 2024"
+          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          icon={<IoSchoolOutline />}
+        >
+          <h3 className="vertical-timeline-element-title">Oracle Next Education F2 T6 Back-end</h3>
+          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Oracle</a>  </h4>
+          <p> Tag: Java, Spring boot, Mysql </p>
+        </VerticalTimelineElement>
+
       </VerticalTimeline>
       </div>
   )

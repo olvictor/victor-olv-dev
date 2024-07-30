@@ -21,6 +21,15 @@ body{
   background-position: top;
 }
 
+
+.border{
+  border: 2px solid rgba(128, 128, 128, 0.05); /* Cor preta com 50% de opacidade */
+}
+
+.modal{
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

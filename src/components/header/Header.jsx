@@ -8,7 +8,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 const Header = () => {
 
   const [menuActive,setMenuActive] = useState(false)
-  const itemsMenu = ["Início","Projetos","Experiência","Contato"]
+  const itemsMenu = ["/Início","/Projetos","/Experiência","/Contato"]
   const handleClick = () =>{
     setMenuActive((prevState)=> !prevState)
   }
@@ -16,7 +16,7 @@ const Header = () => {
   const ativo = menuActive ? <IoMdClose fill="#fff" className="text-3xl " onClick={handleClick} /> : <HiMenu  fill="#fff" className="text-3xl" onClick={handleClick}/> 
 
   return (
-    <div className='w-full h-[50px] bg-bg-header flex items-center fixed justify-between px-[25px] z-10'>
+    <div className='w-full h-[50px] bg-bg-header flex items-center fixed justify-between px-[25px] md:px-[305px] z-10'>
         <h1 className="text-white font-bold font-pacifico">VictorOlv</h1>
         <div className="relative md:hidden">
             {ativo}
@@ -30,7 +30,7 @@ const Header = () => {
       <div className="hidden md:flex">
         <ul className={`animate-fadeIn gap-[10px] flex bg-bg-header uppercase w-[auto] items-center rounded-b-md text-white`}>
                {itemsMenu.map((item,index)=>{
-                return  <li className="cursor-pointer hover:underline" key={index}><Link to={item} smooth={true} duration={500}>{item}</Link></li>
+                return  <li className="cursor-pointer hover:text-font-gray" key={index}><Link to={item} smooth={true} duration={500}>{item}</Link></li>
                 })}
         </ul>
       </div>
