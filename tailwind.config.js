@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'custom': '0px 0px 3px #5323a1',
+      },
       colors:{
         'bg-header' :'#222222',
         'font-gray' :'#C5C5C5'

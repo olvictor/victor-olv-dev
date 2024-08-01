@@ -2,19 +2,17 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { IoSchoolOutline } from "react-icons/io5";
-import { useInView } from 'react-intersection-observer';
-import wave from '../../assets/wave-white.svg'
-
+import { motion } from 'framer-motion';
 const TimeLine = () => {
  
 
 
   return (
-      <div className='animate-fadeIn flex flex-col items-center relative h-[auto]'>
-      {/* <div className="absolute top-[160px] left-0 w-full h-[1px] bg-bg-header z-10"></div> */}
-      <div className='w-[100%]  absolute top-[0px]'>
-        <img src={wave} alt="" />
-      </div>
+      <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{duration:1,delay:0.5}}
+      className='flex flex-col items-center relative h-[auto]'>
       <h2 className='text-5xl font-bold text-white mt-[250px] mb-[200px] z-20'>Cursos</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -111,7 +109,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
 
       </VerticalTimeline>
-      </div>
+      </motion.div>
   )
 }
 
