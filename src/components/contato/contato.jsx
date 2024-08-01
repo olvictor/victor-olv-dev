@@ -9,7 +9,11 @@ const Contato = () => {
    
   return (
 
-    <motion.div  className='lg:justify-center flex h-[450px]' id='Contato'>
+    <motion.div  
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{duration:1,delay:0.5}}
+    className='lg:justify-center flex h-[450px]' id='Contato'>
          <div className='animate-fadeIn text-5xl font-bold text-white items-center text-center w-[100%] mt-[100px] h-[300px] lg:w-[100%]'>
             <h2>Contato</h2>
             <div className='w-[100%] h-auto lg:flex lg:justify-center lg:mt-[50px] lg:flex-col lg:items-center '>
