@@ -4,13 +4,20 @@ import { useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { MdOutlineHome } from "react-icons/md";
+import { FaRegFolder } from "react-icons/fa";
+import { LuFolderOpen } from "react-icons/lu";
+import { RiToolsFill } from "react-icons/ri";
+import { GrContact } from "react-icons/gr";
+
 
 const Header = () => {
 
 
   const [scroll, setScrollActive] = useState(false)
 
-  const [menuActive,setMenuActive] = useState(false)
+  const [itemAtivo,setItemAtivo] = useState(null);
+ 
   const itemsMenu = ["Início","Projetos","Habilidades","Contato"]
   const handleClick = () =>{
     setMenuActive((prevState)=> !prevState)
@@ -32,27 +39,34 @@ const Header = () => {
     };
   },[])
 
-  const ativo = menuActive ? <IoMdClose fill="#fff" className="text-3xl " onClick={handleClick} /> : <HiMenu  fill="#fff" className="text-3xl" onClick={handleClick}/> 
 
   return (
-    <nav className={`animate-fadeIn w-full h-[50px]  hover:bg-bg-header ${scroll ? 'hidden' : "flex"} items-center fixed justify-between px-[25px] md:px-[305px] z-10`}>
-        <h1 className="text-white font-bold font-pacifico">VictorOlv</h1>
-        <div className="relative md:hidden">
-            {ativo}
-            <ul className={`${menuActive ? "flex" : "hidden"} animate-fadeIn gap-[10px] flex-col absolute bg-bg-header right-[-25px] bottom-[-132px] uppercase w-[150px] items-center rounded-b-md text-white`}>
-               {itemsMenu.map((item,index)=>{
-                return  <li key={index}><a href="#">{item}</a></li>
-                })}
-            </ul>
+    <nav className={`animate-fadeIn w-full h-[50px] hover:bg-black-opacity ${scroll ? 'hidden' : "flex"} flex justify-center mt-8 fixed px-[25px] md:px-[305px] z-10`}>
+      <navbar className='bg-white-opacity w-72 h-full flex justify-center items-center gap-8 rounded-2xl px-4'>
+        <div className="relative">
+          <MdOutlineHome size={30} color="#fff" className="cursor-pointer" onMouseEnter={()=> setItemAtivo("home")} onMouseLeave={()=> setItemAtivo(null)}/>
+          <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 bg-white-opacity rounded-xl ${itemAtivo === "home" ? 'flex justify-center items-center text-center' : 'hidden'}`}> home </span>
+        </div>
+        <div className="relative">
+          <FaRegFolder size={30} color="#fff" className="cursor-pointer"  onMouseEnter={()=> setItemAtivo("projetos")} onMouseLeave={()=> setItemAtivo(null)}/>
+          <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 center bg-white-opacity rounded-xl ${itemAtivo === "projetos" ? 'flex': 'hidden'}`}>projetos</span>
         </div>
 
-      <div className="hidden md:flex">
-        <ul className={`animate-fadeIn gap-[10px] flex  uppercase w-[auto] items-center rounded-b-md text-white`}>
-               {itemsMenu.map((item,index)=>{
-                return  <li className="cursor-pointer hover:text-font-gray" key={index}><Link to={item} smooth={true} duration={500}>{item}</Link></li>
-                })}
-        </ul>
-      </div>
+        <div className="relative" >
+          <LuFolderOpen size={30} color="#fff" className="cursor-pointer" onMouseEnter={()=> setItemAtivo("experiencia")} onMouseLeave={()=> setItemAtivo(null)}/>
+          <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 center bg-white-opacity rounded-xl ${itemAtivo === "experiencia" ? 'flex': 'hidden'}`}>experiência</span>
+        </div>
+
+        <div className="relative" >
+          <RiToolsFill size={30} color="#fff" className="cursor-pointer" onMouseEnter={()=> setItemAtivo("ferramentas")} onMouseLeave={()=> setItemAtivo(null)}/>
+          <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 center bg-white-opacity rounded-xl ${itemAtivo === "ferramentas" ? 'flex': 'hidden'}`}>ferramentas</span>
+        </div>
+
+        <div className="relative" >
+          <GrContact size={30} color="#fff" className="cursor-pointer" onMouseEnter={()=> setItemAtivo("contato")} onMouseLeave={()=> setItemAtivo(null)}/>
+          <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 center bg-white-opacity rounded-xl ${itemAtivo === "contato" ? 'flex': 'hidden'}`}>contato</span>
+        </div>
+      </navbar>
     </nav>
   )
 }
