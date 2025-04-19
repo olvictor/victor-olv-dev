@@ -22,7 +22,8 @@ module.exports = {
         'color-orange':'rgb(244, 108, 56)',
         'color-green':'rgb(197, 255, 65)',
         'color-cinza-1':'rgb(153, 143, 143)',
-        'color-cinza-2':'rgb(106, 107, 110);'
+        'color-cinza-2':'rgb(106, 107, 110);',
+        'color-cinza-3':'rgba(182, 180, 189, .2);'
         
       },
       animation: {

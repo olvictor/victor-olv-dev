@@ -17,7 +17,7 @@ import store from '../assets/store.png'
 import forum from '../assets/forumhub.png'
 
 const Projetos = [{
-    titulo: "Dogs Social Media",
+    titulo: "Rede social",
     github: "https://github.com/olvictor/Dogs-Social-media",
     deploy:"https://dogs-social-media-pi.vercel.app",
     imagens: [dog,dog2,dog3,dog4,dog5],

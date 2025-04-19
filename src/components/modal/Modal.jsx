@@ -66,12 +66,12 @@ const Modal = ({ setOpenModal, current}) => {
             </div>
             <div className='w-1/2 flex flex-col pl-[30px] items-center'>
               <IoMdClose className='align self-end cursor-pointer mt-[20px] hover:fill-[#FFD700]' fill='#FFFFFF30' size={40} onClick={()=>{setOpenModal(false)}} />
-              <p className='mt-[70px] text-white text-xl '>
+              <p className='mt-[70px] text-color-cinza-2 leading-[1.1] font-thin'>
               {Projetos[current].sobre}
               </p>
               <div className='text-left w-[100%]'>
               {Projetos[current].features && Projetos[current].features.map((f,index)=>{
-                return <p className='italic mt-[30px] text-white text-xl '>➝ {f} </p>
+                return <p className='italic mt-[30px] text-color-cinza-2 text-center font-medium leading-[1.1] font-thin'>➝ {f} </p>
               }) }
               </div>
             </div>

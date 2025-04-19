@@ -1,9 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { HiMenu } from "react-icons/hi";
-import { IoMdClose } from "react-icons/io";
-import { Link, animateScroll as scroll } from 'react-scroll';
 import { MdOutlineHome } from "react-icons/md";
 import { FaRegFolder } from "react-icons/fa";
 import { LuFolderOpen } from "react-icons/lu";
@@ -41,8 +38,8 @@ const Header = () => {
 
 
   return (
-    <nav className={`animate-fadeIn w-full h-[50px] hover:bg-black-opacity ${scroll ? 'hidden' : "flex"} flex justify-center mt-8 fixed px-[25px] md:px-[305px] z-10`}>
-      <navbar className='bg-white-opacity w-72 h-full flex justify-center items-center gap-8 rounded-2xl px-4'>
+    <nav className={`animate-fadeIn w-full h-auto hover:bg-black-opacity flex justify-center pt-8  px-[25px] md:px-[305px] z-40`}>
+      <navbar className='bg-white-opacity  w-full h-[3rem] lg:w-2/5 flex justify-center items-center gap-8 rounded-2xl px-4'>
         <div className="relative">
           <MdOutlineHome size={30} color="#fff" className="cursor-pointer" onMouseEnter={()=> setItemAtivo("home")} onMouseLeave={()=> setItemAtivo(null)}/>
           <span className={`absolute animate-slide-bottom top-10 left-[-6px] p-1 text-white w-auto px-4 bg-white-opacity rounded-xl ${itemAtivo === "home" ? 'flex justify-center items-center text-center' : 'hidden'}`}> home </span>
