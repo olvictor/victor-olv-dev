@@ -37,7 +37,7 @@ const Tecnologias = () => {
   return (
     <div className='flex flex-wrap gap-8 items-center justify-center mt-6'>
             {tecs.map((tec,index)=>{
-                return <div key={index} className='flex bg-color-orange hover:opacity-75  rounded-xl gap-4 items-center w-[45%] h-[100px] px-2'>  
+                return <div key={index} className='flex bg-color-orange hover:opacity-75  rounded-xl gap-4 items-center w-[30%] h-[80px] px-2'>  
                     <i className={`${tec.img} text-white text-6xl`}></i>
                     <p className='text-color-white leading-[1.2] tracking-tighter font-thin font-bold'>{tec.nome}</p>
 

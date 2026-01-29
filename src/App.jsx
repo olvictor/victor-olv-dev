@@ -6,13 +6,14 @@ import Estatisticas from './components/Estatisticas/Estatisticas'
 import Destaques from './components/destaques/Destaques'
 import { SlBookOpen } from "react-icons/sl";
 import Projetos from './components/projetos/Projetos'
-import TimeLine from './components/TimeLine/TimeLine'
 
+import { EXPERIENCES } from '../constants.js';
 import Contato from './components/contato/contato'
 import Modal from './components/modal/Modal'
 
 import Tecnologias from './components/tecnologias/Tecnologias'
 import { useState } from 'react'
+import Exptimeline from './components/exptimeline/Exptimeline.jsx'
 
 
 
@@ -36,19 +37,21 @@ function App() {
         <div className='text-center flex flex-col overflow-y-auto  lg:h-[calc(100vh-8rem)] lg:pr-[20%] gap-16'>
           <TextoComSub  principal={"SOFTWARE"} sub={"ENGINEER"}/>
           <span className='italic font-extralight text-lg leading-[1.4] text-font-gray px-6 mt-6 text-center'>
-          Apaixonado por criar experiências intuitivas e envolventes para o usuário. Especialista em transformar ideias em produtos primorosamente elaborados.</span> 
+          Desenvolvedor de Software ABAP com experiência em soluções SAP, atuando no desenvolvimento, manutenção e otimização de programas, relatórios e interfaces. Focado em qualidade, performance e entrega de valor ao negócio.</span> 
           
           <div className='flex items-center w-full justify-center gap-8 lg:gap-2'>
             <Estatisticas principal={2} subtext={"Anos de Estudo"} />
-            <Estatisticas principal={8} subtext={"Projetos Realizados"} />
-            <Estatisticas principal={2} subtext={"Bootcamps Realizados"} />
+            <Estatisticas principal={12} subtext={"Projetos Realizados"} />
+            <Estatisticas principal={3} subtext={"Bootcamps Realizados"} />
           </div>
-          <TextoComSub  principal={"EXPERIÊNCIA EM"} sub={"CURSOS"}/>
-          <TimeLine />
+          <TextoComSub  principal={"EXPERIÊNCIAS"} sub={""}/>
+          <div className="mb-32">
+            <Exptimeline  experiencias={EXPERIENCES}/>
+          </div>
           <section className='flex flex-col px-2 gap-6 mt-8'>
         <div className='lg:flex-row flex flex-col gap-4'>
         <Destaques  cor={"bg-color-orange"} icon={<SlBookOpen size={40} color='white' />} text={"dynamic animation,motion design"} textColor={"white"}/>
-        <Destaques  cor={"bg-color-green"} icon={<SlBookOpen size={40} color='black' />} text={"dynamic animation,motion design"} textColor={"black"}/>
+        <Destaques  cor={"bg-color-green"} icon={<SlBookOpen size={40} color='black' />} text={"posts,estudos & blog"} textColor={"black"}/>
         </div>
       </section>
         <div>
@@ -57,7 +60,7 @@ function App() {
         <Projetos setOpenModal={setOpenModal} setCurrent={setCurrent}/>
 
         <TextoComSub  principal={"TECNOLOGIAS &"} sub={"LINGUAGENS"}/>
-        <Tecnologias />
+        {/* <Tecnologias experiencias={EXPERIENCES} /> */}
         <TextoComSub  principal={"VAMOS TRABALHAR"} sub={"JUNTOS"}/>
         <Contato />
           </div>

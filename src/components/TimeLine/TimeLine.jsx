@@ -2,6 +2,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { IoSchoolOutline } from "react-icons/io5";
+import { IoBriefcaseOutline } from "react-icons/io5";
 import { motion } from 'framer-motion';
 const TimeLine = () => {
  
@@ -66,7 +67,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
        
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className="vertical-timeline-element--education "
           dateClassName="text-white"
           date="Abril de 2023"
           iconStyle={{ background: 'rgb(244, 108, 56)', color: '#fff' }}
@@ -114,6 +115,28 @@ const TimeLine = () => {
           <h3 className="vertical-timeline-element-title">Análise e Desenvolvimento de Sistemas</h3>
           <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">O Centro Universitário União das Américas Descomplica</a>  </h4>
           <p> Tag: Desenvolvimento de Software</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          dateClassName="text-white"
+          date="Setembro de 2025 - Outubro de 2025"
+          iconStyle={{ background: 'rgb(244, 108, 56)', color: '#fff' }}
+          icon={<IoSchoolOutline />}
+        >
+          <h3 className="vertical-timeline-element-title">Bootcamp em ABAP</h3>
+          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">Numen</a>  </h4>
+          <p> Tag: Desenvolvimento de Software</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          dateClassName="text-white"
+          date="Novembro de 2025 - Atual    "
+          iconStyle={{ background: 'rgb(244, 108, 56)', color: '#fff' }}
+          icon={<IoBriefcaseOutline />}
+        >
+          <h3 className="vertical-timeline-element-title">Desenvolvedor ABAP</h3>
+          <h4 className="vertical-timeline-element-subtitle underline text-blue-700"><a href="#">NumenIT</a>  </h4>
+
         </VerticalTimelineElement>
       </VerticalTimeline>
       </motion.div>
