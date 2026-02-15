@@ -70,3 +70,50 @@ export const EXPERIENCES = [
         description: 'Curso focado na construção de interfaces responsivas e acessíveis utilizando as melhores práticas do mercado.'
       },
   ];
+
+
+  export const BLOG_POSTS= [
+    {
+      id: 'abap-future-2024',
+      title: 'O Futuro do ABAP em 2024: O que esperar?',
+      summary: 'Uma análise profunda sobre as mudanças no ecossistema SAP e como o ABAP Cloud está transformando o desenvolvimento.',
+      content: `
+        O mundo SAP está passando por uma transformação sem precedentes. Com a chegada do SAP BTP e do modelo ABAP Cloud, os desenvolvedores precisam se adaptar rapidamente.
+  
+        ## O que é ABAP Cloud?
+        ABAP Cloud não é apenas uma nova versão, é um novo paradigma. Ele remove o acesso direto a tabelas do dicionário padrão e foca em APIs estáveis e Core Data Services (CDS).
+  
+        ### Por que mudar agora?
+        1. **Escalabilidade**: Aplicações prontas para a nuvem.
+        2. **Upgrade-stable**: Personalizações que não quebram durante atualizações do sistema central.
+        3. **Modernidade**: Uso de ferramentas como ADT (ABAP Development Tools) em vez da clássica SE80.
+  
+        Neste artigo, exploraremos como começar sua jornada rumo ao Clean ABAP.
+      `,
+      date: '15 de Outubro, 2023',
+      readTime: '8 min',
+      category: 'Tecnologia',
+      imageUrl: 'https://picsum.photos/seed/abap/800/400'
+    },
+    {
+      id: 'clean-code-frontend',
+      title: 'Clean Code no Frontend: Além do óbvio',
+      summary: 'Dicas práticas para manter seus componentes React limpos, testáveis e fáceis de manter a longo prazo.',
+      content: `
+        Manter um código limpo em aplicações de grande escala é um desafio constante. No React, isso significa mais do que apenas identação correta.
+  
+        ## Princípios Fundamentais
+        - **Single Responsibility**: Cada componente deve fazer apenas uma coisa.
+        - **Composição sobre Herança**: Use props.children para criar layouts flexíveis.
+        - **Hooks Customizados**: Isole a lógica de negócio da UI.
+  
+        ### Exemplo Prático
+        Em vez de ter um useEffect de 50 linhas, mova essa lógica para um hook como useUserData. Isso torna o componente declarativo e muito mais fácil de ler.
+      `,
+      date: '22 de Setembro, 2023',
+      readTime: '5 min',
+      category: 'React',
+      imageUrl: 'https://picsum.photos/seed/react/800/400'
+    }
+  ];
+  

@@ -22,7 +22,7 @@ const Exptimeline = ({ experiencias = [] }) => {
   
               {/* Center Icon */}
               <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                <div className="bg-orange-600 p-2 rounded-full border-4 border-black text-white">
+                <div className="bg-orange-600 p-2 rounded-full border-2 border-WHITE text-white">
                   <Briefcase size={18} />
                 </div>
               </div>
